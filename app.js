@@ -1,8 +1,10 @@
 const express = require("express");
 const app = express();
+const cors = require("cors")
 const dataController = require("./controllers/dataController.js");
 
 app.use(express.json());
+app.use(cors());
 
 app.use((req, res, next) => {
     console.log(`Trigger 1: .use within app.js`);
