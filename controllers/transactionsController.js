@@ -35,7 +35,7 @@ transactionsRoute.delete("/:index", (req, res) => {
     const { index } = req.params;
 
     if(transactionsArr[index]) {
-        let remove = transactionsArr.splice(transactionsArr[index], 1);
+        let remove = transactionsArr.splice(index, 1);
         res.json(remove);
     } else {
         res.status(404).json({error: "Not found"})
