@@ -1,7 +1,7 @@
 const express = require("express");
 const app = express();
 const cors = require("cors")
-const dataController = require("./controllers/dataController.js");
+const transactionsController = require("./controllers/transactionsController.js");
 
 app.use(express.json());
 app.use(cors());
@@ -11,7 +11,7 @@ app.use((req, res, next) => {
     next();
 });
 
-app.use("/data", dataController );
+app.use("/transactions", transactionsController );
 
 app.get("/", (req, res) => {
     res.send(`Budget-App`);
