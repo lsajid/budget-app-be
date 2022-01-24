@@ -41,4 +41,16 @@ module.exports = [
       amount: -40,
       from: "Mr. Kiwi"
     },
+    {
+      date: "January 10",
+      name: "Delete for Green",
+      amount: -40000,
+      from: "Mr. Kiwi"
+    },
+    {
+      date: "December 12",
+      name: "Edit amount to -3010 for Neutral",
+      amount: 10,
+      from: "Mr. Kiwi"
+    },
   ];
